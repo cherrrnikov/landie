@@ -1,0 +1,92 @@
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+@media (max-width: 992px)
+  .container
+    max-width: 700px
+  .navbar
+    &-top
+      &__links
+        max-width: 200px
+  .logo
+    transform: translateX(0)
+  .main
+    padding-top: 140px
+    background-image: url("../img/main-img-992.png")
+    background-position: top right
+    &-info
+      max-width: 450px
+      &__title
+        font-size: 40px
+      &__text
+        margin-bottom: 49px
+@media (max-width: 768px)
+  .container
+    max-width: 576px
+    width: 92%
+  .navbar
+    display: flex
+    justify-content: space-between
+    width: 100%
+    position: fixed
+    top: 0
+    background-color: #fff
+    z-index: 1
+    &-top
+      &__links
+        display: none
+      &__button
+        display: none
+  .logo
+    margin-left: 37%
+  .menu
+    &-button
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
+      width: 22px
+      height: 17.7px
+      padding: 0
+      border: none
+      background-color: #fff
+      cursor: pointer
+      outline: none
+      &__line
+        width: 22px
+        height: 1.5px
+        background-color: $primary
+  .main
+    padding-top: 60px
+    background-image: url("../img/main-img-768.png")
+    transform: translateY(70px)
+    &-info
+      max-width: 400px
+      &__title
+        font-size: 30px
+        line-height: 40px
+      &__text
+        font-size: 16px
+        line-height: 25px
+        margin-bottom: 35px
+      &__button
+        max-width: 159px
+@media (max-width: 576px)
+  .main
+    background-image: url("../img/main-img-576.png")
+
+    &-info
+      margin: auto
+      display: flex
+      flex-direction: column
+      align-items: center
+      &__title
+        text-align: center
+      &__text
+        text-align: center
+      &__button
+        padding-top: 10px
+        padding-bottom: 10px
+        min-width: 80%
+        margin: 0
+        margin-bottom: 30px
