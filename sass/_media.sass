@@ -1,6 +1,27 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
+  .option
+    max-width: 200px
+  .description
+    &-main
+      max-height: 210px
+      margin-bottom: 30px
+    &--second
+      width: 425px
+  .slide
+    &--second
+      width: 450px
+      height: 525px
+    &--third
+      transform: none
+  .trimmings
+    &-wrapper
+      max-width: 960px
+      grid-template-columns: 460px 400px
+      grid-column-gap: 100px
+      grid-template-rows: 320px 350px 358px
+      grid-row-gap: 200px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -12,6 +33,7 @@
     transform: translateX(0)
   .main
     padding-top: 140px
+    padding-bottom: 200px
     background-image: url("../img/main-img-992.png")
     background-position: top right
     &-info
@@ -20,6 +42,48 @@
         font-size: 40px
       &__text
         margin-bottom: 49px
+  .slide
+    &--first
+      order: -1
+      width: 400px
+      height: 400px
+    &--second
+      width: 100%
+  .info
+    &-slider
+      &__item
+        flex-direction: column
+        align-items: center
+  .description
+    &--second
+      width: 100%
+    &--third
+      padding-top: 30px
+    &-main
+      &__text
+        &--third
+          display: none
+  .option
+    &--second
+      margin-bottom: 30px
+  .info
+    &-slider
+      &__item
+        &--third
+          align-items: flex-start
+  .trimmings
+    &-wrapper
+      max-width: 700px
+      grid-template-columns: 300px 300px
+      grid-template-rows: 320px 330px 400px
+      grid-row-gap: 180px
+      &__info
+        &--up
+          transform: none
+  .swiper
+    &-pagination
+      top: 98.3%
+
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -31,14 +95,14 @@
     position: fixed
     top: 0
     background-color: #fff
-    z-index: 1
+    z-index: 2
     &-top
       &__links
         display: none
       &__button
         display: none
   .logo
-    margin-left: 37%
+    margin-left: 40%
   .menu
     &-button
       display: flex
@@ -58,6 +122,7 @@
         background-color: $primary
   .main
     padding-top: 60px
+    padding-bottom: 200px
     background-image: url("../img/main-img-768.png")
     transform: translateY(70px)
     &-info
@@ -71,10 +136,19 @@
         margin-bottom: 35px
       &__button
         max-width: 159px
+  .trimmings
+    &-wrapper
+      max-width: 576px
+      grid-template-columns: 276px 200px
+      grid-column-gap: 95px
+      grid-template-rows: 420px 420px 485px
+      &__title
+        font-size: 30px
 @media (max-width: 576px)
+  .logo
+    margin-left: 37%
   .main
     background-image: url("../img/main-img-576.png")
-
     &-info
       margin: auto
       display: flex
@@ -90,3 +164,38 @@
         min-width: 80%
         margin: 0
         margin-bottom: 30px
+  .info
+    padding-top: 70px
+    margin: auto
+  .slide
+    &--first
+      width: 300px
+      height: 300px
+    &--second
+      height: 300px
+    &--third
+      width: 300px
+  .description
+    &-main
+      &__title
+        font-size: 30px
+        line-height: 35px
+      &__text
+        font-size: 14px
+  .option
+    &--first
+      margin-bottom: 40px
+    &--third
+      transform: translateY(-20px)
+      margin-bottom: 40px
+  .trimmings
+    &-wrapper
+      max-width: 300px
+      grid-template-columns: 1fr
+      grid-template-rows: 200px 330px 225px 330px 212px 335px
+      grid-row-gap: 0
+      align-items: flex-start
+@media (max-width: 354px)
+  .option
+    &--first
+      transform: translateY(65px)

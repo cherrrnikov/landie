@@ -1,9 +1,10 @@
 $(document).ready(function() {
   var infoSlider = new Swiper('.info-slider', {
+  effect: "flip",
   speed: 900,
   autoplay: {
     enabled: true,
-    delay: 5000, 
+    delay: 5000,
   },
   // Optional parameters
   direction: 'horizontal',
