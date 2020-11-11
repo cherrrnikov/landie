@@ -1,3 +1,6 @@
+@media (max-width: 1440px)
+  .purchase
+    background-image: url("../img/purchase.png")
 @media (max-width: 1200px)
   .container
     max-width: 960px
@@ -102,7 +105,8 @@
       &__button
         display: none
   .logo
-    margin-left: 40%
+    &-link
+      transform: none
   .menu
     &-button
       display: flex
@@ -144,9 +148,20 @@
       grid-template-rows: 420px 420px 485px
       &__title
         font-size: 30px
+  .purchase
+    &-container
+      max-width: 500px
+      padding: 0 30px
 @media (max-width: 576px)
   .logo
-    margin-left: 37%
+    &-link
+      max-width: 79px
+      margin: auto
+  .menu
+    &-button
+      position: absolute
+      top: 30px
+      right: 25px
   .main
     background-image: url("../img/main-img-576.png")
     &-info
@@ -195,7 +210,34 @@
       grid-template-rows: 200px 330px 225px 330px 212px 335px
       grid-row-gap: 0
       align-items: flex-start
+  .purchase
+    &-container
+      margin-top: 120px
+      &__title
+        font-size: 30px
+@media (max-width: 370px)
+  .purchase
+    background-image: none
+    background-color: #f1f5ff
+    &-br
+      display: none
 @media (max-width: 354px)
   .option
     &--first
       transform: translateY(65px)
+@media (min-width: 991px)
+  .button
+    &--dark
+      &:hover
+        background-color: #a7c7fc
+  .navbar
+    &-top
+      &__link
+        &:hover
+          color: $primary
+  .main
+    &-info
+      &__button
+        &--transparent
+          &:hover
+            background-color: #b9d1fa
