@@ -25,6 +25,9 @@
       grid-column-gap: 100px
       grid-template-rows: 320px 350px 358px
       grid-row-gap: 200px
+  .footer
+    &-container
+      max-width: 960px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -86,7 +89,9 @@
   .swiper
     &-pagination
       top: 98.3%
-
+  .footer
+    &-container
+      max-width: 700px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -152,6 +157,10 @@
     &-container
       max-width: 500px
       padding: 0 30px
+  .footer
+    &-container
+      max-width: 576px
+      width: 92%
 @media (max-width: 576px)
   .logo
     &-link
@@ -204,6 +213,8 @@
       transform: translateY(-20px)
       margin-bottom: 40px
   .trimmings
+    padding-top: 50px
+    padding-bottom: 100px
     &-wrapper
       max-width: 300px
       grid-template-columns: 1fr
@@ -211,20 +222,50 @@
       grid-row-gap: 0
       align-items: flex-start
   .purchase
+    padding-bottom: 120px
     &-container
       margin-top: 120px
       &__title
         font-size: 30px
+  .footer
+    &-logo
+      &__link
+        order: -1
+    &-top
+      flex-direction: column
+      &__meaning
+        margin-bottom: 30px
+    &-bottom
+      flex-direction: column
+      &__links
+        margin-bottom: 40px
+        width: 200px
+      &__icons
+        width: 200px
 @media (max-width: 370px)
   .purchase
     background-image: none
     background-color: #f1f5ff
+    &-container
+      margin-top: 40px
     &-br
       display: none
+@media (max-width: 364px)
+  .main
+    padding-bottom: 130px
 @media (max-width: 354px)
   .option
     &--first
       transform: translateY(65px)
+@media (max-width: 339px)
+  .footer
+    &-bottom
+      flex-direction: column
+      &__links
+        margin-bottom: 40px
+@media (max-width: 320px)
+  .main
+    padding-bottom: 70px
 @media (min-width: 991px)
   .button
     &--dark
@@ -241,3 +282,8 @@
         &--transparent
           &:hover
             background-color: #b9d1fa
+  .footer
+    &-bottom
+      &__link
+        &:hover
+          color: $primary
