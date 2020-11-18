@@ -1,0 +1,171 @@
+.modal
+  &__close
+    position: absolute
+    top: 20px
+    right: 20px
+    border-radius: 50%
+    height: 45px
+    width: 45px
+    &-icon
+      width: 45px
+      height: 45px
+  &__overlay
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-color: rgba(243,243,243,1)
+    z-index: 4
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.4s
+    &--visible
+      visibility: visible
+      opacity: 0.4
+  &-payment
+    position: fixed
+    max-width: 500px
+    min-height: 450px
+    border-radius: 40px
+    border: 3px solid $primary
+    z-index: 5
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background-color: #fff
+    padding: 80px 100px
+    display: flex
+    flex-direction: column
+    align-items: center
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.4s
+    &--visible
+      visibility: visible
+      opacity: 1
+    &__form
+      width: 300px
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__title
+      font-size: 32px
+      margin-top: 0
+      color: $primary
+      margin-bottom: 0
+    &__input
+      height: 40px
+      border-radius: 40px
+      padding: 5px 15px
+      border: 2px solid $primary
+      outline: none
+      width: 100%
+      margin-top: 15px
+      &-group
+        width: 100%
+    &__button
+      margin-top: 20px
+      width: 160px
+      height: 30px
+      border-radius: 2px
+      border: none
+      outline: none
+      cursor: pointer
+      color: #ffffff
+      background-color: $primary
+.modal
+  &-subscribe
+    position: fixed
+    max-width: 408px
+    height: 350px
+    border-radius: 40px
+    border: 3px solid $primary
+    z-index: 5
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background-color: #fff
+    padding: 80px 100px
+    display: flex
+    flex-direction: column
+    align-items: center
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.4s
+    &--visible
+      visibility: visible
+      opacity: 1
+    &__title
+      font-size: 32px
+      margin-top: 0
+      margin-bottom: 0
+      color: $primary
+    &__form
+      width: 197px
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__input
+      width: 100%
+      margin-top: 30px
+      margin-bottom: 0
+      &-group
+        width: 100%
+    &__button
+      margin-top: 20px
+      width: 160px
+      height: 30px
+      border-radius: 2px
+      border: none
+      outline: none
+      cursor: pointer
+      color: #ffffff
+      background-color: $primary
+.modal
+  &__good
+    width: 100px
+    height: 100px
+    margin-bottom: 20px
+  &-successful
+    position: fixed
+    max-width: 402px
+    height: 350px
+    border-radius: 40px
+    border: 3px solid $primary
+    z-index: 5
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background-color: #fff
+    padding: 40px 90px
+    display: flex
+    flex-direction: column
+    align-items: center
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.4s
+    &--visible
+      visibility: visible
+      opacity: 1
+    &__title
+      font-size: 32px
+      margin-top: 0
+      margin-bottom: 15px
+    &__text
+      margin: 0
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 26px
+      color: $text-dark
+      margin-bottom: 20px
+    &__button
+      width: 160px
+      height: 30px
+      border-radius: 2px
+      border: none
+      outline: none
+      cursor: pointer
+      color: #ffffff
+      background-color: $primary

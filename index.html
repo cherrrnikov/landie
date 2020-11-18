@@ -20,7 +20,7 @@
         </div>
         <!-- /.navbar-top__links -->
         <a href="index.html" class="logo-link"><img src="img/logo.svg" alt="Logo: Landie" class="logo-img"></a>
-        <button class="navbar-top__button button button--dark">Buy Now</button>
+        <button class="navbar-top__button button button--dark purchase-button">Buy Now</button>
         <div class="menu">
           <input type="checkbox" class="menu__checkbox" id="checkbox">
           <label for="checkbox" class="menu__button">
@@ -32,7 +32,7 @@
             <a href="#" class="menu__menu-link">Home</a>
             <a href="#" class="menu__menu-link">About</a>
             <a href="#" class="menu__menu-link">Contact</a>
-            <button class="menu__menu-button button--dark">Buy Now</button>
+            <button class="menu__menu-button button button--dark purchase-button">Buy Now</button>
           </div>
           <!-- /.menu__menu -->
         </div>
@@ -52,7 +52,7 @@
         <p class="main-info__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
         natoque penatibus et magnis dis parturient montes, nascetur ridiculus
         mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-        <button class="main-info__button main-info__button--dark button button--dark">Purchase UI Kit</button>
+        <button class="main-info__button main-info__button--dark button button--dark purchase-button">Purchase UI Kit</button>
         <button class="main-info__button main-info__button--transparent">Learn More</button>
       </div>
       <!-- /.main-info -->
@@ -224,7 +224,7 @@
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
               mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
             </p>
-            <button class="trimmings-wrapper__button button button--dark">Purchase Now</button>
+            <button class="trimmings-wrapper__button button button--dark purchase-button">Purchase Now</button>
           </div>
           <!-- /.trimmings-wrapper__info -->
       </div>
@@ -244,7 +244,7 @@
       <!-- /.price -->
       <div class="order">
         <span class="order__lable">See, One price. Simple.</span>
-        <button class="order__button button button--dark">Purchase Now</button>
+        <button class="order__button button button--dark purchase-button">Purchase Now</button>
       </div>
       <!-- /.order -->
     </div>
@@ -257,7 +257,7 @@
       <div class="footer-top">
         <span class="footer-top__meaning">©2020 Yourcompany</span>
         <a href="index.html" class="footer-logo__link"><img src="img/logo.svg" alt="Icon: Logo" class="footer-logo__img"></a>
-        <button class="footer-top__button button--dark">Purchase Now</button>
+        <button class="footer-top__button button--dark purchase-button">Purchase Now</button>
       </div>
       <!-- /.footer-top -->
 
@@ -272,14 +272,14 @@
         </div>
         <!-- /.footer-bottom__links -->
         <div class="footer-bottom__icons">
-          <a href="#" class="footer-bottom__icon"><img src="img/facebook.svg" alt="Icon: Facebook"
+          <a href="https://facebook.com" class="footer-bottom__icon" target="_blank"><img src="img/facebook.svg" alt="Icon: Facebook"
               class="footer-bottom__icon"></a>
-          <a href="#" class="footer-bottom__icon"><img src="img/in.svg" alt="Icon: LinkedIn" class="footer-bottom__icon"></a>
-          <a href="#" class="footer-bottom__icon"><img src="img/twitter.svg" alt="Icon: Twitter"
+          <a href="https://linkedin.com" class="footer-bottom__icon" target="_blank"><img src="img/in.svg" alt="Icon: LinkedIn" class="footer-bottom__icon"></a>
+          <a href="https://twitter.com" class="footer-bottom__icon" target="_blank"><img src="img/twitter.svg" alt="Icon: Twitter"
               class="footer-bottom__icon"></a>
-          <a href="#" class="footer-bottom__icon"><img src="img/youtube.svg" alt="Icon: YouTube"
+          <a href="https://youtube.com" class="footer-bottom__icon" target="_blank"><img src="img/youtube.svg" alt="Icon: YouTube"
               class="footer-bottom__icon"></a>
-          <a href="#" class="footer-bottom__icon"><img src="img/insta.svg" alt="Icon: Instagram"
+          <a href="https://instagram.com" class="footer-bottom__icon" target="_blank"><img src="img/insta.svg" alt="Icon: Instagram"
               class="footer-bottom__icon"></a>
         </div>
         <!-- /.footer-bottom__icons -->
@@ -288,9 +288,67 @@
     </div>
     <!-- /.footer-container -->
   </section>
+
+  <!-- Модальное окно -->
+  <div class="modal" id="main">
+    <div class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal-payment">
+      <a href="#" class="modal__close"><img src="img/close.svg" alt="Icon: Close" class="modal__close-icon"></a>
+      <h3 class="modal-payment__title">Your personal data</h3>
+      <form action="send.php" method="POST" class="modal-payment__form form">
+        <div class="modal-payment__input-group">
+          <input type="text" class="modal-payment__input" required="" minlength="2" placeholder="Enter your full name" name="name">
+        </div>
+        <div class="modal-payment__input-group">
+          <input type="text" class="modal-payment__input phone" required="" placeholder="Enter your phone number" name="phone">
+        </div>
+        <div class="modal-payment__input-group">
+          <input type="text" class="modal-payment__input" required="" placeholder="Enter your email" name="email">
+        </div>
+        <button class="modal-payment__button successful-call" type="submit">Send</button>
+      </form>
+    </div>
+    <!-- /.modal-payment -->
+  </div>
+  <!-- /.modal -->
+
+  <!-- Модальное окно с подпиской -->
+  <div class="modal" id="subscribe">
+    <div class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal-subscribe">
+      <a href="#" class="modal__close"><img src="img/close.svg" alt="Icon: Close" class="modal__close-icon"></a>
+      <h3 class="modal-subscribe__title">Subscribe us!</h3>
+      <form action="send.php" method="POST" class="modal-subscribe__form form">
+        <div class="modal-subscribe__input-group">
+          <input type="text" class="modal-payment__input modal-subscribe__input" required="" placeholder="Enter your email" name="email">
+        </div>
+        <button class="modal-subscribe__button successful-call" type="submit">Send</button>
+      </form>
+    </div>
+    <!-- /.modal-subscribe -->
+  </div>
+  <!-- /.modal -->
+
+  <!-- Модальное окно "Успешно" -->
+  <div class="modal modal__perfect" id="sex">
+    <div class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal-successful">
+      <img src="img/good.svg" alt="Icon: Successful" class="modal__good">
+      <h3 class="modal-successful__title">Thank you!</h3>
+      <p class="modal-successful__text">We will contact you soonest!</p>
+      <button class="modal-successful__button">OK</button>
+    </div>
+    <!-- /.modal-subscribe -->
+  </div>
+  <!-- /.modal -->
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/slider.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
