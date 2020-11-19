@@ -26,7 +26,7 @@
   &-payment
     position: fixed
     max-width: 500px
-    min-height: 450px
+    max-height: 450px
     border-radius: 40px
     border: 3px solid $primary
     z-index: 5
@@ -114,53 +114,6 @@
         width: 100%
     &__button
       margin-top: 20px
-      width: 160px
-      height: 30px
-      border-radius: 2px
-      border: none
-      outline: none
-      cursor: pointer
-      color: #ffffff
-      background-color: $primary
-.modal
-  &__good
-    width: 100px
-    height: 100px
-    margin-bottom: 20px
-  &-successful
-    position: fixed
-    max-width: 402px
-    height: 350px
-    border-radius: 40px
-    border: 3px solid $primary
-    z-index: 5
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
-    background-color: #fff
-    padding: 40px 90px
-    display: flex
-    flex-direction: column
-    align-items: center
-    visibility: hidden
-    opacity: 0
-    transition: opacity 0.4s
-    &--visible
-      visibility: visible
-      opacity: 1
-    &__title
-      font-size: 32px
-      margin-top: 0
-      margin-bottom: 15px
-    &__text
-      margin: 0
-      font-style: normal
-      font-weight: normal
-      font-size: 16px
-      line-height: 26px
-      color: $text-dark
-      margin-bottom: 20px
-    &__button
       width: 160px
       height: 30px
       border-radius: 2px
