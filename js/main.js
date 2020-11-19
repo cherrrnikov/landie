@@ -68,15 +68,15 @@ $(document).ready(function () {
       },
       messages: {
         name: {
-          required: "Enter your full name",
+          required: "*Please fill in this field",
           minlength: "Minimum of two characters",
         },
         email: {
-          required: "Please, enter your email",
+          required: "*Please fill in this field",
           email: "Example: name@domain.com",
         },
         phone: {
-          required: "Enter your phone number",
+          required: "*Please fill in this field",
           minlength: "Example: +7 (xxx)-xxx-xx-xx",
         },
       },
