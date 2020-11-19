@@ -354,6 +354,10 @@
 @media (max-width: 320px)
   .main
     padding-bottom: 70px
+@media (max-height: 520px)
+  .menu
+    &__menu
+      height: 92%
 @media (max-height: 455px)
   .modal
     &-payment
@@ -384,13 +388,16 @@
           width: 48%
       &__button
         width: 48%
-  .menu
-    &__menu
-      height: 330px
 @media (max-height: 368px)
   .modal
     &-subscribe
       max-height: 300px
+@media (max-height: 331px)
+  .menu
+    &__menu
+      &-link
+        &--up5
+          transform: translateY(-8px)
 @media (min-width: 991px)
   .button
     &--dark
